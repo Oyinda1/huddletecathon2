@@ -1,0 +1,100 @@
+*{box-sizing: border-box;}
+:root{--violet:hsl(257, 40%, 49%);
+--softMagenta:hsl(300, 69%, 71%);}
+
+body{background-image: url('/images/bg-desktop.svg');
+background-color: var(--violet);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: contain;}
+
+.main{display: flex;}
+
+h2{font-family: 'Poppins', sans-serif;}
+
+p, a{font-family: 'Open Sans', sans-serif;}
+
+h2, p{color: white;}
+
+.text{margin-left: 50px;
+margin-right: 10px;
+margin-top: 35px;}
+
+.h{padding-right: 300px;
+font-weight: 600;}
+p{padding-right: 140px;
+font-weight: 400;}
+
+.logo{width: 150px;
+margin-bottom: 40px;
+margin-top: 15px;
+margin-left: 40px;}
+
+.webr{width: 650px;
+margin-left: 40px;}
+
+.reg{background-color: white;
+padding: 10px 45px;
+border-radius: 20px;
+border: none;
+width: 154px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.425);}
+
+.regr{text-decoration: none;
+color: var(--violet);}
+
+.regr:hover{color: white;}
+
+.reg:hover{background-color: var(--softMagenta);}
+
+.fa-facebook-f{color: white;
+margin-right: 20px;
+padding: 6px;}
+
+.fa-twitter{color: white;
+margin-right: 20px;
+padding: 6px;}
+
+.fa-instagram{color: white;
+padding: 6px;}
+
+#foot{display: flex;
+justify-content: flex-end;
+margin-right: 155px;}
+
+
+i:hover{color: var(--softMagenta);}
+
+@media only screen and (max-width:375px){
+    .main{flex-direction: column;}
+
+    .webr{width: 300px;
+          margin:0px 25px;}
+
+    body{background-image: url('/images/bg-mobile.svg');
+        background-color: var(--violet);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;}
+
+    .text{text-align: center;
+          margin: 5px 25px;
+          padding: 0;}
+
+     .logo{width: 130px;
+            margin: 25px 25px;}
+
+    .h{padding: 0px 10px;
+       font-weight: 400;}
+
+    p{padding: 0px 10px;}
+
+    .reg{margin:30px 65px;
+         width: 170px;}
+    #foot{justify-content: center;
+           margin-top: 0px;
+           margin-bottom: 35px;
+           margin-left: 0px;
+           margin-right: 0px;}
+}
+  
